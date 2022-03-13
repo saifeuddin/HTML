@@ -1,0 +1,148 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;dfn&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                stands for the "definition element", and it specifies a term that is going to be defined within the content.
+            </b>
+        </p>
+        <b>Note :</b>
+        <p>
+            The nearest parent of the dfn tag must also contain the definition/explanation for the term.
+        </p>
+        <b>
+            The text in the dfn element usually
+            renders in italic.
+        </b>
+        <br>
+        <br>
+
+
+        <h2>Attributes :</h2>
+        <ul>
+            <li>
+                <b>
+                    title
+                </b>
+            </li>
+            <li>
+                <b>
+                    id
+                </b>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global Attributes
+            in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in HTML.
+        </b>
+    </div>
+
+
+
+    <br>
+    <br>
+    <p>
+        The term inside the dfn tag can be any of the following:
+    </p>
+        <b>
+            1. Just as the content of the dfn element:
+        </b>
+        <h3>Example :</h3>
+        <p>
+            <dfn>HTML</dfn> 
+            is the standard markup language for creating web pages.
+        </p>
+    <br>
+    <br>
+    <br>
+        <b>
+            2. Or, with the title attribute added:
+        </b>
+        <h3>Example :</h3>
+        <p>
+            <dfn title="HyperText markup Language">HTML</dfn> 
+            is the standard markup language for creating web pages.
+        </p>
+    <br>
+    <br>
+    <br>
+        <b>
+            3. Or, with an abbr tag inside the dfn element:
+        </b>
+        <h3>Example :</h3>
+        <p>
+            <dfn>
+                <abbr title="HyperText Markup Language">
+                    HTML
+                </abbr>
+            </dfn> 
+            is the standard markup language for creating web pages.
+        </p>
+    <br>
+    <br>
+    <br>
+        <b>
+            4. Or, with the id attribute added. Then, whenever a term is used, it can refer back to the definition with an a tag:
+        </b>
+        <h3>Example :</h3>
+        <p>
+            <dfn id="dfn">
+                <abbr title="HyperText Markup Language">
+                    HTML
+                </abbr>
+            </dfn> 
+            is the standard markup language for creating web pages.
+        </p>
+        <p>This is some text...</p>
+        <p>This is some text...</p>
+        <p>
+            Learn 
+                <a href="#dfn">HTML</a> 
+            now.
+        </p>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

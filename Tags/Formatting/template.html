@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+            .myClass {
+                color: white;
+                background-color: DodgerBlue;
+                padding: 20px;
+                text-align: center;
+                margin: 10px;
+            }
+    </style>
+</head>
+
+<body>
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;template&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The template tag is used as a container to hold some HTML content hidden from the user when the page loads.
+            </b> <br> <br>
+            <b>
+                The content inside template can be rendered later with a JavaScript.
+            </b> <br> <br>
+            You can use the template tag if you have some HTML code you want to use over and over again, but not until you ask for it. To do this without the template tag, you have to create the HTML code with JavaScript to prevent the browser from rendering the code.
+        </p>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global Attributes
+            in
+            HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in HTML.
+        </b>
+    </div>
+
+
+
+    <h3>Example :</h3>  
+        <p>
+            Use template to hold some content that will be hidden when the page loads. Use JavaScript to display it:
+        </p>
+        <button onclick="showContent()">Show hidden content</button>
+
+
+        <template id="temp">
+            <h2>Flower</h2>
+            <img src="img_the_scream.jpg"
+                width="214" height="204">
+        </template>
+
+
+        <script>
+            function showContent(){
+                var temp = document.getElementById('temp');
+
+                var clone = temp.content.cloneNode(true);
+
+                document.body.appendChild(clone);
+            }
+        </script>
+
+    <br>
+    <br>
+    <br>
+
+
+
+    <h3>
+            Example:
+    </h3>
+        <p>
+            Fill the web page with one new div element for each item in an array. The HTML code of each div element is inside the template element:
+        </p>
+        <p>The HTML code of each div element is
+            inside the template element.</p>
+
+        <p>Click the button below to display the
+            hidden content from the template
+            element.</p>
+
+        <button onclick="showContent1()">Show
+            hidden content</button>
+
+        <template id="demo">
+            <div class="myClass">I like: </div>
+        </template>
+
+
+        <script>
+            var myArr= ["Audi", "BMW", "Ford",
+            "Honda", "Jaguar", "Nissan"];
+
+            function showContent1 () {
+                var temp, item, a , i ;
+
+                temp = document.getElementById('demo');
+
+                item = temp.content.querySelector('div');
+
+                for(i = 0; i < myArr.length; i++) {
+                    a = document.importNode(item, true);
+                    a.textContent += myArr[i];
+
+                    document.body.appendChild(a);
+                }
+            }
+        </script>
+
+</body>
+
+</html>

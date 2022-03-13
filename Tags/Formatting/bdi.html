@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;bdi&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+            BDI stands for Bi-Directional
+            Isolation.
+            <br> <br>
+            $$ --
+            The bdi tag isolates a part of text that might be formatted in a different direction from other text outside it.
+
+            </b> <br> <br>
+            This element is useful when embedding user-generated content with an unknown text direction.
+        </p>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global Attributes
+            in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in HTML.
+        </b>
+    </div>
+
+
+
+    <br>
+    <br>
+    <h3>Example :</h3>
+    <h4>The bdi element</h4>
+    <p>
+        In the example below, usernames are shown along with the number of points in a contest. If the bdi element is not supported in the browser, the username of the Arabic user would confuse the text (the bidirectional algorithm would put the colon and the number "90" next to the word "User" rather than next to the word "points").
+    </p>
+    <ul>
+        <li>User <bdi>hrefs</bdi>: 60 points</li>
+        <li>User <bdi>jdoe</bdi>: 80 points</li>
+        <li>User <bdi>إيان</bdi>: 90 points</li>
+    </ul>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

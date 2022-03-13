@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;meter&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                Defines a scalar measurement within a known range, or a fractional value. This is also known as a gauge.
+            </b>
+        </p>
+        <p>
+            Examples: Disk usage, the relevance of a query result, etc.
+        </p>
+
+        <b>Tip :</b>
+        <p>
+            Always add the &lt;label&gt; tag for best accessibility practices!
+        </p>
+        <br>
+        <br>
+
+
+        <b>Note :</b>
+        <p>
+            Note: The meter tag should not be used to indicate progress (as in a progress bar). For progress bars, use the progress tag.
+        </p>
+        <br>
+        <br>
+
+
+        <h2>Attributes :</h2>
+        <ol>
+            <li>
+                <b>
+                    form  =
+                </b>
+                form-id
+                <p>
+                    Specifies which form the meter element belongs to.
+                </p>
+            </li>
+            <li>
+                <b>
+                    id  =
+                </b>
+                id name
+                <p>
+                    Used with label tag.
+                </p>
+            </li>
+            <li>
+                <b>
+                    name  =
+                </b>
+                name
+            </li>
+            <br>
+            <li>
+                <b>
+                    min  =
+                </b>
+                number
+                <p>
+                    Specifies the minimum value of the range. Default value is 0.
+                </p>
+            </li>
+            <li>
+                <b>
+                    max  =
+                </b>
+                number
+                <p>
+                    Specifies the maximum value of the range.
+                </p>
+            </li>
+            <li>
+                <b>
+                    low  =
+                </b>
+                number
+                <p>
+                    Specifies the range that is considered to be a low value.
+                </p>
+            </li>
+            <li>
+                <b>
+                    high  =
+                </b>
+                number
+                <p>
+                    Specifies the range that is considered to be a high value
+                </p>
+            </li>
+            <li>
+                <b>
+                    optimum  =
+                </b>
+                number
+                <p>
+                    Specifies what value is the optimal value for the gauge
+                </p>
+            </li>
+            <li>
+                <b>
+                    value  =
+                </b>
+                number
+                <p>
+                    Required. Specifies the current value of the gauge.
+                </p>
+            </li>
+            
+        </ol>
+    </div>
+
+
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global Attributes
+            in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in HTML.
+        </b>
+    </div>
+
+
+
+    <br>
+    <br>
+    <h3>Example :</h3>
+    <form action="" method="GET" id="form1" >
+        First Name : 
+        <input type="text" name="fname" id="fname"> <br>
+        <input type="submit" name="submit" id="submit"> <br>
+    </form>
+
+    <p>
+        <label for="anna"> Annas Score :</label>
+        <meter id="anna" form="form1" name="anna"  max="100" min="10" high="90" low="20" value="50" optimum="50">
+        </meter>
+    </p>
+
+
+</body>
+
+</html>
