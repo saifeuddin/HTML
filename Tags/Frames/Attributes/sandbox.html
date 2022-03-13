@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;frame&gt; Tag sandbox
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The sandbox attribute enables an extra set of restrictions for the content in the iframe.
+            </b>
+        </p>
+        <br>
+        <br>
+        <b>
+            When the sandbox attribute is present and it will:
+        </b><br>
+        <img src="sandbox.jpg" alt="">
+        <p>
+            The value of the sandbox attribute can either be empty (then all restrictions are applied), or a space-separated list of pre-defined values that will REMOVE the particular restrictions.
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+        <b>
+    &lt;iframe sandbox="value"&gt;
+        </b>
+        </big>
+        </pre>
+
+
+
+        <h2>Attributes Values</h2>
+        <img src="sandbx.jpg" alt="">
+
+
+        <pre>
+        <big>
+        <b>
+    &lt;iframe src="demo_iframe_sandbox.htm" sandbox&gt;
+    &lt;iframe src="demo_iframe_sandbox.htm" sandbox="allow-scripts"&gt;
+    &lt;iframe src="demo_iframe_sandbox.htm" sandbox="allow-forms"&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+
+    </div>
+
+
+    <h3>Example :</h3>
+    <iframe src="../frame.html"  sandbox="allow-forms"></iframe>
+    <br>
+    <iframe src="srcdoc.html" sandbox="allow-scripts"></iframe>
+    <br>
+    <iframe src="sandbox.jpg" sandbox></iframe>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

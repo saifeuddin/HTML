@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;input&gt; Tag formenctype
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The formenctype attribute specifies how the form-data should be encoded when submitting it to the server (only for forms with method="post").
+            </b> <br> <br>
+            <p>
+                The formenctype attribute overrides the enctype attribute of the form element.
+            </p>
+
+            <br>
+            <br>
+            <b>Note : </b>
+            The formenctype attribute is used with type="submit" and type="image".
+        </p>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        
+        <h2>
+            Syntax
+        </h2>
+        <pre>
+            <big>
+                &lt;input type="submit" formenctype="multipart/form-data" value="Submit as Multipart/form-data"&gt;
+            </big>
+        </pre>
+        
+        
+        <h2>
+            Attributes Values
+        </h2>
+        <br>
+        <ul>
+            <li>
+                <b>
+                    application/x-www-form-urlencoded
+                </b>
+                <p>
+                    Default. All characters are
+                    encoded before sent (spaces
+                    are converted to "+" symbols,
+                    and special characters are
+                    converted to ASCII HEX values)
+                </p>
+            </li>
+            <br>
+            <li>
+                <b>
+                    multipart/form-data
+                </b>
+                <p>
+                    This value is necessary if the
+                    user will upload a file
+                    through the form.
+                </p>
+            </li>
+            <br>
+            <li>
+                <b>
+                    text/plain
+                </b>
+                <p>
+                    Sends data without any
+                    encoding at all. Not
+                    recommended.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+</body>
+
+</html>

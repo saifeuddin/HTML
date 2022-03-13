@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;frame&gt; Tag srcdoc Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The srcdoc attribute specifies the HTML content to show in the inline frame.
+            </b>
+        </p>
+        <b>
+            Tip: This attribute is expected to be used together with 
+            <mark>
+                the sandbox and seamless attributes.
+            </mark>
+        </b>
+        <br>
+        <br>
+        <br>
+        <p>
+            If a browser supports the srcdoc attribute, it will override the content specified in the src attribute (if present).
+        </p>
+        <p>
+            If a browser does NOT support the srcdoc attribute, it will show the file specified in the src attribute instead (if present).
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+    &lt;iframe srcdoc="HTML_code"&gt;
+        </big>
+        </pre>
+
+
+
+        <h2>Attributes Values</h2>
+        <ul>
+            <li>
+                <b>
+                    HTML_code
+                </b>
+                <p>
+                    Specifies the address of the
+                    document to embed in the
+                    iframe
+                </p>
+            </li>
+        </ul>
+
+
+        <pre>
+        <big>
+        <b>
+    &lt;iframe srcdoc="&lt;p&gt; Hello world! &lt;/p&gt;" src="demo_iframe_srcdoc.htm"&gt; &lt;/iframe&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+
+    </div>
+
+
+    <h3>Example :</h3>
+    <iframe srcdoc="<p>Hello world!</p>" src="demo_iframe_srcdoc.htm"></iframe>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

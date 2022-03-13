@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: rgb(193, 153, 230); padding: 20px;">
+            ## HTML &lt;source&gt; Tag
+        </h1>
+        <br>
+
+        <img src="Screenshot_3.jpg" alt="">
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+        <h2> All Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    <a href="../Images/Area Attributes/media.html">
+                        media - media_query
+                    </a>
+                </b>
+                <p>
+                    Accepts any valid media query that would normally be defined in a CSS.
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                    <b>
+    &lt;picture&gt;  
+        &lt;source media="(min-width:650)" srcset="img_pink_flowers.jpg"&gt;
+        &lt;source media="(min-width:450)" srcset="img_white_flowers.jpg"&gt; 
+
+        &lt;img src="img_oragnge_flowers.jpg" alt="flowers" style="width:auto;"&gt; 
+    &lt;/picture&gt; 
+                    </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    src -
+                </b>
+                URL
+                <p>
+                    Required when &lt;source&gt; is used in &lt;audio&gt; and &lt;video&gt;. Specifies the URL of the media file.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video muted autoplay loop &gt;
+        &lt;source src="movie.mp4" type="video/mp4" &gt; 
+            Your browser does not support the video element.
+    &lt;/video&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    srcset - URL
+                </b>
+                <p>
+                    Required when &lt;source&gt; is used in &lt;picture&gt;. Specifies the URL of the image to use in different situations
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;picture&gt;  
+        &lt;source srcset="img_pink_flowers.jpg"&gt;
+        &lt;source srcset="img_white_flowers.jpg"&gt; 
+
+        &lt;img src="img_oragnge_flowers.jpg" alt="flowers" style="width:auto;"&gt; 
+    &lt;/picture&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    type - MIME-type
+                </b>
+                <p>
+                    Specifies the MIME-type of the resource
+                </p>
+                <img src="Screenshot_4.jpg" alt="">
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video muted autoplay loop &gt;
+        &lt;source src="movie.mp4" type="video/mp4" &gt; 
+            Your browser does not support the video element.
+    &lt;/video&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    sizes
+                </b>
+                <p>
+                    Specifies image sizes for different page layouts
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <video width="300px" height="200px" controls preload="none" loop poster="w3schools_green.jpg">
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video
+        element.
+    </video>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

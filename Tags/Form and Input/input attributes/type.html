@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;input&gt; Tag type
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The type attribute specifies the type of input element to display.
+            </b>
+        </p>
+
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Syntax
+        </h2>
+        <pre>
+        <big>
+        input type="value"
+        </big>
+        </pre>
+
+
+
+        <h2>
+            Attributes Values
+        </h2>
+        <ol>
+            <li>
+                <b>
+                    text
+                </b>
+                <p>
+                    Default. Defines a single-line text field
+                </p>
+                <b>
+                    The default width of the text field is 20 characters.
+                </b>
+                <pre>
+                    <big>
+    &lt;input type="text" id="fname" name="fname"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    number
+                </b>
+                <p>
+                    Defines a field for entering a number
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="number" id="quantity" name="quantity" min="1" max="5"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    tel
+                </b>
+                <p>
+                    Defines a field for entering a telephone number
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="tel" id="phone" name="phone" placeholder="123-45-678" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    password
+                </b>
+                <p>
+                    Defines a password field
+                </p>
+                <b>
+                    Note: Any forms involving sensitive information like passwords should be served over HTTPS.
+                </b>
+                <pre>
+                    <big>
+    &lt;input type="password" id="pwd" name="pwd"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    submit
+                </b>
+                <p>
+                    defines a submit button which
+                    submits all form values to a
+                    form-handler.
+                </p>
+                <b>
+                    The form-handler is typically
+                    a server page with a script
+                    for processing the input data.
+                </b>
+                <pre>
+                    <big>
+    &lt;input type="submit"  value="Submit"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    button
+                </b>
+                <p>
+                    Defines a clickable button (mostly used with a JavaScript to activate a script)
+                </p>
+                <pre>
+                <big>
+    &lt;input type="button" value="Click me" onclick="msg()"&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    reset
+                </b>
+                <p>
+                    Defines a clickable button (mostly used with a JavaScript to activate a script)
+                </p>
+                <b>
+                    Tip: Avoid reset buttons in your forms! It is frustrating for users if they click them by mistake.
+                </b>
+                <pre>
+                <big>
+    &lt;input type="reset""&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    range
+                </b>
+                <p>
+                    Defines a range control (like a slider control)
+                </p>
+                <pre>
+                <big>
+    &lt;input type="range" id="points" name="points" min="0" max="10"&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    checkbox
+                </b>
+                <p>
+                    Defines a checkbox
+                </p>
+                <pre>
+                <big>
+    &lt;input type="checkbox" id="vehicle1" name="vehicle1" value="Bike"&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    radio
+                </b>
+                <p>
+                    Defines a radio button
+                </p>
+                <b>
+                    Note: The value attribute defines the unique value associated with each radio button. The value is not shown to the user, but is the value that is sent to the server on "submit" to identify which radio button that was selected.
+                </b> <br> <br> <br>
+                <b>
+                    Note: The radio group must have share the same name (the value of the name attribute) to be treated as a group. Once the radio group is created, selecting any radio button in that group automatically deselects any other selected radio button in the same group. You can have as many radio groups on a page as you want, as long as each group has its own name.
+                </b>
+                <pre>
+                <big>
+    &lt;input type="radio" id="html" name="fav_language" value="HTML"&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    color
+                </b>
+                <p>
+                    Defines a color picker
+                </p>
+                <b>
+                    The default value is #000000 (black). The value must be in seven-character hexadecimal notation.
+                </b>
+                <pre>
+                    <big>
+    &lt;input type="color" id="favcolor" name="favcolor" value="#ff0000"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    date
+                </b>
+                <p>
+                    Defines a date control (year, month, day (no time))
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="date" id="birthday" name="birthday"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    datetime-local
+                </b>
+                <p>
+                    Defines a date and time control (year, month, day, time (no timezone)
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="datetime-local" id="birthdaytime" name="birthdaytime"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    month
+                </b>
+                <p>
+                    Defines a month and year control (no timezone)
+                </p>
+                <b>
+                    The format is "YYYY-MM".
+                </b>
+                <pre>
+                    <big>
+    &lt;input type="month" id="bdaymonth" name="bdaymonth"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    week
+                </b>
+                <p>
+                    Defines a week and year control (no timezone)
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="week" id="week" name="week"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    time
+                </b>
+                <p>
+                    Defines a control for entering a time (no timezone)
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="time" id="appt" name="appt"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    email
+                </b>
+                <p>
+                    Defines a field for an e-mail address
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="email" id="email" name="email"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    file
+                </b>
+                <p>
+                    Defines a file-select field and a "Browse" button (for file uploads)
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="file" id="myfile" name="myfile"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    image
+                </b>
+                <p>
+                    Defines an image as the submit button
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="image" alt="submit" src="img_submit.gif"width="48" height="48"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    hidden
+                </b>
+                <p>
+                    Defines a hidden input field
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="hidden" id="custId" name="custId" value="3487"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    url
+                </b>
+                <p>
+                    Defines a field for entering a URL
+                </p>
+                <pre>
+                    <big>
+    &lt;input type="url" id="homepage" name="homepage"&gt;
+                    </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    search
+                </b>
+                <p>
+                    Defines a text field for entering a search string
+                </p>
+                <b>
+                    Note: Remember to set a name for the search field, otherwise nothing will be submitted. The most common name for search inputs is q.
+                </b>
+                <pre>
+                    <big>
+    &lt;input type="search" id="gsearch" name="gsearch"&gt;
+                    </big>
+                </pre>
+            </li>
+        </ol>
+    </div>
+
+
+
+
+
+</body>
+
+</html>

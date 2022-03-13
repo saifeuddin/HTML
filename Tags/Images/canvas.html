@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;canvas&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The &lt;canvas&gt; tag  tag is used to draw graphics, on the fly, via scripting (usually JavaScript).
+            </b>
+        </p>
+        <br>
+        <b>
+            Any text inside the canvas element will be displayed in browsers with JavaScript disabled and in browsers that do not support canvas.
+        </b>
+        <br>
+        <br>
+        <p>
+            The canvas tag is transparent, and is only a container for graphics, you must use a script to actually draw the graphics.
+        </p>
+
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Attributes</h2>
+        <ul>
+            <li>
+                hight = length
+                <p>
+                    Specifies the height of the canvas. Default value is 150
+                </p>
+            </li>
+            <br>
+            <li>
+                width = length
+                <p>
+                    Specifies the width of the canvas Default value is 300
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+
+
+
+    <br>
+    <br>
+    <h3>Example :</h3>
+    <p>
+        Draw a red rectangle on the fly, and show it inside the canvas element:
+    </p>
+    <img src="Screenshot_7.jpg" alt="">
+    <br>
+    <br>
+    <canvas id="myCanvas">
+        Your browser does not support the canvas tag.
+    </canvas>
+    <script>
+        var canvas = document.getElementById('myCanvas');
+        var ctx = canvas.getContext('2d');
+
+        ctx.fillStyle = "#FF0000";
+        ctx.fillRect(50, 11, 80, 80);
+    </script>
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    
+    
+    <h3>Example :</h3>
+    <p>
+        Draw a red rectangle on the fly, and show it inside the canvas element:
+    </p>
+    <img src="Screenshot_8.jpg" alt="">
+    <br>
+    <br>
+    <canvas id="c">
+        Your browser does not support the canvas tag.
+    </canvas>
+    <script>
+        var canvas = document.getElementById('c');
+        var ctx1 = c.getContext('2d');
+
+        ctx1.fillStyle = "#FF0000";
+        ctx1.fillRect(20, 20, 75, 50);
+
+        ctx1.globalAlpha = 0.2;
+
+        ctx1.fillStyle = "blue";
+        ctx1.fillRect(50, 50, 75, 50);
+        ctx1.fillStyle = "green";
+        ctx1.fillRect(80, 80, 75, 50);
+    </script>
+    <br>
+    <br>
+    <br>
+
+
+
+</body>
+</html>

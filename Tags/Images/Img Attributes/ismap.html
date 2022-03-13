@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;img&gt; Tag ismap
+            Attribute
+        </h1>
+        <br>
+
+        <p> 
+            The ismap attribute is a boolean attribute. <br> <br>
+            <b>
+                $$ --
+                When present, it specifies that the image is part of a server-side image map (an image map is an image with clickable areas).
+            </b>
+        </p>
+        <br>
+        <b>
+            When clicking on a server-side image map, 
+            <mark>
+                the click coordinates are sent to the server as a URL query string.
+            </mark>
+        </b>
+        <br>
+        <br>
+        <br>
+        <p>
+            <b>
+                Note:
+            </b>
+            The ismap attribute
+            <b>
+                is allowed only if the img element is a
+                <mark>
+                    descendant of an &lt;a&gt;
+                </mark>
+                element with a valid href for php.
+            </b>
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+    &lt;img ismap&gt;
+        </big>
+        </pre>
+
+
+
+
+        <h2>Attributes Values</h2>
+        <ul>
+            <li>
+                <b>
+                    ismap
+                </b>
+            </li>
+        </ul>
+        <pre>
+        <big>
+        <b>
+    &lt;a href="/action_page.php"&gt;
+
+        &lt;img src="w3html.gif" alt="W3Schools.com" ismap&gt;
+
+    &lt;/a&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+    <h3>Example :</h3>
+    <h1>The img ismap attribute</h1>
+
+    <a href="/action_page.php">
+        <img src="w3html.gif" alt="W3Schools.com" width="100" height="132" ismap>
+    </a>
+
+    <p>Click the image, and the click coordinates
+        will be sent to the server as a URL query
+        string.</p>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

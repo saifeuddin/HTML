@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;svg&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The &lt;svg&gt; tag defines a container for SVG graphics.
+            </b>
+        </p>
+        <br>
+        <b>
+            SVG has several methods for drawing paths, boxes, circles, text, and graphic images.
+        </b>
+        <br>
+        <br>
+
+
+       <br>
+       <br>
+       <br>
+       <br>
+
+
+       <h2>Attributes</h2>
+       <ul>
+                <li>
+                    hight = length
+                </li>
+                <br>
+                <li>
+                    width = length
+                </li>
+       </ul>
+    </div>
+
+
+
+    <br>
+    <br>
+    <h3>Example :</h3>
+    <p>
+        Draw a rectangle:
+    </p>
+    <img src="Screenshot_3.jpg" alt="">
+
+    <svg height="100" width="400px">
+        <rect width="400" height="100" style="fill:rgb(0, 0, 255); stroke-width:10; stroke:rgb(0, 0, 0)"/>
+    </svg>
+    <br>
+    <br>
+    <br>
+
+
+
+
+    <h3>Example :</h3>
+    <img src="Screenshot_4.jpg" alt="">
+    <svg width="400" height="180">
+        <rect x="60" y="20" rx="5" ry="10"
+            width="150" height="150" 
+            style="fill:red; stroke:black; stroke-width:5; opacity:0.5" />
+    </svg>
+    <br>
+    <br>
+    <br>
+
+
+    <h3>Example :</h3>
+    <img src="Screenshot_5.jpg" alt=""> <br> <br>
+    <svg width="300" height="200">
+        <polygon
+            points="100,10 40,198 190,78 10,78 160,198"
+            style="fill:lime;stroke:purple;stroke-width:5;fill-rule:evenodd;" />
+    </svg>
+    <br>
+    <br>
+    <br>
+    
+    
+    
+    <h3>Example :</h3>
+    <img src="Screenshot_6.jpg" alt=""> 
+    <br>
+    <br>
+    <svg height="130" width="500" style="border: 2px solid black;" >
+        <defs>
+            <lineargradient id="grad1" x1="0%" y1="0%" x2="100%" y2="0%">
+                <stop offset="0%" style="stop-color:rgb(255,255,0);stop-opacity:1" />
+                <stop offset="50%" style="stop-color:rgb(218, 118, 118);stop-opacity:1" />
+                <stop offset="100%" style="stop-color:rgb(33, 83, 42);stop-opacity:1" />
+            </lineargradient>
+        </defs>
+
+        <ellipse cx="100" cy="65" rx="85" ry="55" fill="url(#grad1)" />
+
+        <text fill="#ffffff" font-size="45" font-family="Verdana" x="50" y="83"> SVG </text>
+    </svg>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+
+</html>

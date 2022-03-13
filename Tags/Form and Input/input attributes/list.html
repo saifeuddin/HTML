@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;input&gt; Tag list
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The list attribute refers to a &lt;datalist&gt; element that contains pre-defined options for an input element.
+            </b>
+        </p>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+
+        <h2>
+            Syntax
+        </h2>
+        <pre>
+            <big>
+        &lt;input list="browsers"&gt;
+
+
+        &lt;datalist id="browsers"&gt;
+
+            option value="Internet Explorer"
+            option value="Firefox"
+            option value="Google Chrome"
+            option value="Opera"
+            option value="Safari"
+
+        &lt;/datalist&gt;
+            </big>
+        </pre>
+
+
+        <h2>
+            Attributes Values
+        </h2>
+        <br>
+        <ul>
+            <li>
+                <b>
+                    datalist_id
+                </b>
+                <p>
+                    Specifies the id of the datalist to bind the input element to
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <h3>Example :</h3>  
+    <form action="/action_page.php" method="get">
+        <label for="browser">Choose your browser from the list:</label> <br>
+        <input list="browsers" name="browser" id="browser">
+        <datalist id="browsers" >
+            <option value="Edge" />
+            <option value="Firefox" />
+            <option value="Chrome" />
+            <option value="Opera" />
+            <option value="Safari" />
+        </datalist> 
+        <br>
+        <br>
+        <input type="submit">
+    </form>
+
+
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;area&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The area tag defines an area inside an image map (an image map is an image with clickable areas).
+            </b>
+        </p>
+        <b>
+            &lt;area&gt; elements are always nested inside a map tag.
+        </b>
+        <br>
+        <br>
+        <br>
+
+        <p>
+            <b>
+                Note : 
+            </b>
+            The usemap attribute in &lt;img&gt; is associated with the map element's name attribute, and creates a relationship between the image and the map.
+        </p>
+        <br>
+        <br>
+
+
+
+
+
+
+        <h2> All Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    shape - default / rect / circle / poly
+                </b>
+                <p>
+                    Specifies the shape of the area
+                </p>
+            </li>
+            <br>
+            <li>
+                <b>
+                    <a href="Area Attributes/coords.html">
+                        coords - coordinates
+                    </a>
+                </b>
+                <p>
+                    Specifies the coordinates of the area.
+                </p>
+            </li>
+            <br>
+
+
+            <li>
+                <b>
+                    alt -
+                </b>
+                text
+                <p>
+                    Specifies an alternate text for the area. Required if the href attribute is present
+                </p>
+                <p>
+                    The alt attribute specifies an alternate text for an area, if the image cannot be displayed.
+                </p>
+                <b>
+                    The alt attribute is required if the href attribute is present.
+                </b>
+                <pre>
+                <big>
+    &lt;area shape="circle" coords="124,58,8" href="venus.htm" alt="Venus"&gt;
+                </big>
+                </pre>
+            </li>
+
+            <li>
+                <b>
+                    href -
+                </b>
+                    URL
+                <br> 
+                <br>
+                    Specifies the hyperlink target for the area
+                <pre>
+                <big>
+    &lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" &gt;
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    hreflang -
+                </b>
+                HTML language_code
+                <br> 
+                <br>
+                    Specifies the language of the target URL
+                <pre>
+                <big>
+    &lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="sun.htm" hreflang="en"&gt;
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    target -
+                </b>
+                _blank / _self / _parent / _top / frameName
+                <br>
+                <br>
+                    Specifies where to open the target URL
+                <pre>
+                <big>
+    &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun" target="_blank"&gt;
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    download - fileName
+                </b> <br> <br>
+                    Specifies that the target will be downloaded when a user clicks on the hyperlink.
+                <pre>
+                <big>
+    &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" download= "sun" alt="Sun" target="_blank"  &gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+
+                <b>
+                    <a href="Area Attributes/media.html">
+                    media
+                    </a>
+                </b>
+                <p>
+                    Specifies what media/device the target URL is optimized for.
+                </p>
+                <b>
+                    Only used if the href attribute is present.
+                </b>
+            </li>
+            <br>
+            <br>
+
+            <li>
+                <b>
+                    type =
+                </b>
+                media_type
+                <p>
+                    Specifies the media type of the target URL.
+                </p>
+                <b>
+                    This attribute is only used if the href attribute is set.
+                </b>
+                <pre>
+                <big>
+    &lt;area shape="rect" coords="0,0,82,126" alt="Sun" href="/images/sun.gif" type="image/gif"&gt;
+                </big>
+                </pre>
+            </li>
+
+
+            <li>
+                <a href="/Area Attributes/rel.html">
+                <b>
+                    rel
+                </b>
+                </a>
+                <p>
+                    Specifies the relationship between the current document and the target URL
+                </p>
+            </li>
+            <br>
+            <br>
+            <li>
+                <a href="Area Attributes/referrer.html">
+                <b>
+                    referrerpolicy
+                </b>
+                </a>
+                <p>
+                    Specifies which referrer information to send with the link.
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+    
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+
+
+
+    <h3>Example :</h3>
+    <img src="Img Attributes/workplace.jpg" alt="Workplace"
+        usemap="#workmap" width="400"
+        height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350"
+            alt="Computer" href="computer.htm">
+        <area shape="rect"
+            coords="290,172,333,250" alt="Phone"
+            href="phone.htm">
+        <area shape="circle" coords="337,300,44"
+            alt="Cup of coffee" href="coffee.htm">
+    </map>
+</body>
+</html>

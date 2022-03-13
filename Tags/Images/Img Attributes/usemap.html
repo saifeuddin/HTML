@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;img&gt; Tag usemap
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The usemap attribute specifies an image as a client-side image map (an image map is an image with clickable areas).
+            </b>
+        </p>
+        <br>
+        <b>
+            The usemap attribute is associated with a 
+            <mark>
+            &lt;map&gt; element's name attribute
+        </mark>
+        and creates a relationship between the img and the &lt;map&gt;.
+        </b>
+        <br>
+        <br>
+        <br>
+        <p>
+        <b>
+            Note: 
+        </b>
+            The usemap attribute 
+            <b>
+                cannot be used if the img element is a 
+                <mark>
+                    descendant of an &lt;a&gt; or &lt;button&gt;
+                    </mark>
+                element.
+            </b>
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+    &lt;img usemap="#mapname"&gt;
+        </big>
+        </pre>
+
+
+
+
+        <h2>Attributes Values</h2>
+        <ul>
+            <li>
+                <b>
+                    #mapname
+                </b>
+                <p>
+                    A hash character ("#") plus the name of the map element to use.
+                </p>
+            </li>
+        </ul>
+
+
+        <pre>
+        <big>
+        <b>
+    &lt;img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379"&gt;
+
+
+    &lt;map name="workmap"&gt;
+        &lt;area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm"&gt;
+    &lt;/map&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+    <h3>Example :</h3>
+    <img src="workplace.jpg" alt="Workplace"
+        usemap="#workmap" width="400"
+        height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+        <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+        <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+    </map>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

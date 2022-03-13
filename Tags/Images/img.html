@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;img&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The img tag is used to embed an image in an HTML page.
+            </b>
+        </p>
+        <br>
+
+
+
+        <b>
+            The img tag has two required attributes:
+        </b>
+        <ul>
+            <li>
+                <b>
+                    src -
+                </b>
+                    Specifies the path to the image.
+            </li>
+            <li>
+                <b>
+                    alt -
+                </b>
+                    Specifies an alternate text for the image, if the image for some reason cannot be displayed.
+            </li>
+        </ul>
+       
+        <br>
+        <br>
+
+        <p>
+            Tip: To link an image to another document, simply nest the img tag inside an &lt;a&gt; tag (see example below).
+        </p>
+        <br>
+
+
+
+
+
+
+        <h2> All Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    src -
+                </b>
+                URL
+                <p>
+                    Specifies the path to the image
+                </p>
+                <pre>
+                <big>
+        &lt;img src="default.jpg"&gt; 
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    srcset -
+                </b>
+                URL-list
+                <p>
+                    Specifies a list of image files to use in different situations.
+                </p>
+            </li>
+            <li>
+                <b>
+                    alt -
+                </b>
+                text
+                <p>
+                    Specifies an alternate text for the image, if the image for some reason cannot be displayed.
+                </p>
+            </li>
+            <li>
+                <b>
+                    longdesc -
+                </b>
+                <a href="Img Attributes/longdesc.html">
+                    URL
+                </a>
+                <p>
+                    Specifies a URL to a detailed description of an image.
+                </p>
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    height -
+                </b>
+                pixels
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    width -
+                </b>
+                pixels
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    sizes -
+                </b>
+                sizes
+                <p>
+                    Specifies image sizes for different page layouts
+                </p>
+            </li>
+            <br>
+            <br>
+
+
+
+
+
+            <li>
+                <b>
+                usemap -
+                </b>
+                <a href="Img Attributes/usemap.html">
+                    value
+                </a>
+                <p>
+                    Specifies an image as a client-side image map
+                </p>
+            </li>
+            <li>
+                <b>
+                    <a href="Img Attributes/ismap.html">
+                ismap 
+            </a>
+            </b>
+                <p>
+                    Specifies an image as a server-side image map.
+                </p>
+            </li>
+            <br>
+            <br>
+
+            
+            <li>
+                <b>
+                    crossorigin =
+                </b>
+                anonymous /
+                use-credentials
+                <p>
+                Allow images from third-party sites that allow cross-origin access to be used with canvas.
+                </p>
+            </li>
+            <br>
+            <li>
+                <b>
+                    loading =
+                </b>
+                <a href="Img Attributes/loading.html">
+                    eager / lazy
+                </a>
+                <br>
+                <br>
+                <b>
+                    Specifies whether a browser should load an image immediately or to defer loading of images until some conditions are met.
+                </b>
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    referrerpolicy =
+                </b>
+                <a
+                    href="Img Attributes/referrer.html">
+                    values
+                </a>
+                <p>
+                    Specifies which referrer information to use when fetching an image
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <p>
+        How to create an image map, with clickable regions. Each region is a hyperlink:
+    </p>
+    <img src="Attributes/workplace.jpg" alt="Workplace"
+        usemap="#workmap" width="400"
+        height="379">
+
+    <map name="workmap">
+        <area shape="rect" coords="34,44,270,350"
+            alt="Computer" href="computer.htm">
+        <area shape="rect"
+            coords="290,172,333,250" alt="Phone"
+            href="phone.htm">
+        <area shape="circle" coords="337,300,44"
+            alt="Cup of coffee" href="coffee.htm">
+    </map>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

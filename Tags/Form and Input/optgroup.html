@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;optgroup&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The optgroup tag is used to group related options in a select element (drop-down list).
+            </b>
+            <p>
+                If you have a long list of options, groups of related options are easier to handle for a user.
+            </p>
+        </p>
+        <br>
+        <br>
+
+
+
+
+
+        <h2>Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    label =
+                </b>
+                text
+                <p>
+                    Specifies a label for an option-group
+                </p>
+            </li>
+            <li>
+                <b>
+                    disabled
+                </b>
+                <p>
+                    Specifies that a optgroup
+                    should be disabled
+                </p>
+                <b>
+                    The disabled attribute can be set to keep a user from selecting the option-group 
+                    <mark>
+                        until some other condition has been met (like selecting a checkbox, etc.).
+                    </mark> <br>
+                    Then, a JavaScript is required to remove the disabled value, and make the option-group selectable.
+                </b>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <h3>The select Element</h3>
+
+    <form action="/action_page.php">
+        <label for="cars" class=""> Chose a Car
+            :</label>
+        <select name="cars" size="" id="">
+        <optgroup label="Rich" disabled>
+                <option value="volvo"> Volvo</option>
+                <option value="saab">Saab</option>
+                <option value="mercedes">Mercedes</option>
+        </optgroup>
+
+        <optgroup label="Famous">
+            <option value="audi">Audi</option>
+            <option value="ferrari"> Ferrari</option>
+            <option value="tata"> TaTa </option>
+        </optgroup>
+        </select>
+        <br>
+        <br>
+        <input type="submit" value="Submit" >
+    </form>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

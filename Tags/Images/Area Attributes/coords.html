@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;img&gt; Tag coords
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The coords attribute specifies the coordinates of an area in an image map.
+            </b>
+        </p>
+        <br>
+        <b>
+            The coords attribute is used together with 
+            <mark>
+                the shape attribute 
+            </mark>
+            to specify the size, shape, and placement of an area.
+        </b>
+        <br>
+        <br>
+        <br>
+        <pre>
+        <big>
+    &lt;area shape="rect" coords="0,0,82,126" href="sun.htm" alt="Sun"&gt;
+        </big>
+        </pre>
+            <b>
+                Tip: The coordinates of the top-left corner of an area are 0,0.
+            </b>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+    &lt;area coords="value"&gt;
+        </big>
+        </pre>
+
+
+
+
+        <h2>Attributes Values</h2>
+        <ul>
+            <li>
+                <b>
+                    x1,y1,x2,y2
+                </b>
+                <p>
+                    Specifies the coordinates of the top-left and bottom-right corner of 
+                    <b>
+                        the rectangle (shape="rect").
+                    </b>
+                </p>
+            </li>
+            <li>
+                <b>
+                    x, y, radius
+                </b>
+                <p>
+                    Specifies the coordinates of 
+                    <b>
+                        the circle 
+                        center and the radius (shape="circle")
+                    </b>
+                </p>
+            </li>
+            <li>
+                <b>
+                    x1,y1,x2,y2, ... xn, yn
+                </b>
+                <p>
+                    Specifies the coordinates of the edges of the polygon. If the first and last coordinate pairs are not the same, 
+                    <b>
+                        the browser will add the last coordinate pair to close the polygon (shape="poly")
+                    </b>
+                </p>
+            </li>
+        </ul>
+
+
+        <pre>
+        <big>
+        <b>
+    &lt;area shape="rect" coords="0,0,82,126"
+        href="sun.htm" alt="Sun"&gt;
+
+
+    &lt;area shape="circle" coords="90,58,3" href="mercur.htm" alt="Mercury"&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+</body>
+
+</html>

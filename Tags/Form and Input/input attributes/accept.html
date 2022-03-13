@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;input&gt; Tag accept
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The accept attribute specifies a filter for what file types the user can pick from the file input dialog box.
+            </b> <br> <br>
+            <b>Note : <br>
+                <mark>
+                    The accept attribute can only be used with &lt;input type="file"&gt;.
+                </mark>
+                </b>
+        </p>
+
+
+        <br>
+        <br>
+        <b>Tip : <br>
+            Do not use this attribute as a validation tool. File uploads should be validated on the server.
+        </b>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Syntax
+        </h2>
+        <pre>
+        <big>
+        accept= "file_extension | audio/* | video/* | image/* |media_type"
+        </big>
+        </pre>
+        <b>
+            Tip :
+        </b>
+        <p>
+            To specify more than one value, separate the values with a comma <br>
+            accept="audio/*, video/*, image/*"
+        </p>
+
+
+
+        <br>
+        <br>
+        <br>
+
+
+
+        <h2>
+            Attributes Values
+        </h2>
+        <br>
+        <ul>
+            <li>
+                <b>
+                    file_extension
+                </b>
+                <p>
+                    Specify the file extension(s) (e.g: .gif, .jpg, .png, .doc) the user can pick from.
+                </p>
+            </li>
+            <br>
+            <li>
+                <b>
+                    audio/*
+                </b>
+                <p>
+                    The user can pick all sound files.
+                </p>
+            </li>
+            <br>
+            <li>
+                <b>
+                    video/*
+                </b>
+                <p>
+                    The user can pick all video files.
+                </p>
+            </li>
+            <li>
+                <b>
+                    image/*
+                </b>
+                <p>
+                    The user can pick all image files.
+                </p>
+            </li>
+            <li>
+                <b>
+                    media_type/*
+                </b>
+                <p>
+                    A valid media type, with no parameters.
+                </p>
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <h3>Example :</h3>
+        &lt;input type="file" id="img" name="img" accept="image/*"&gt;
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

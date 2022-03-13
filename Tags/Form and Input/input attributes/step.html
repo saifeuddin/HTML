@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;input&gt; Tag step
+            Attribute
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The step attribute specifies the interval between legal numbers in an input element.
+            </b> <br> <br>
+            Example: if step="3", legal numbers could be -3, 0, 3, 6, etc.
+            <br>
+            <br>
+            <b>
+                Tip:
+            </b>
+            The step attribute can be used together with the max and min attributes to create a range of legal values.
+            <br>
+            <br>
+            <br>
+            <br>
+
+            <b>Note : <br>
+                The step attribute works with the following input 
+                <mark>
+                types: number, range, date, datetime-local, month, time and week.
+                </mark>
+            </b>
+        </p>
+        
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Syntax
+        </h2>
+        <pre>
+        <big>
+            input type="number" id="points" name="points" step="3"
+        </big>
+        </pre>
+
+
+        <h2>
+            Attributes Values
+        </h2>
+        <br>
+        <ul>
+            <li>
+                <b>
+                    number
+                </b>
+                <p>
+                    Specifies the interval between legal numbers in the input field. Default is 1
+                </p>
+            </li>
+            <li>
+                any
+            </li>
+        </ul>
+    </div>
+
+
+
+
+    <h3>Example :</h3>
+    <form action="/action_page.php">
+        <label for="points">Points:</label>
+        <input type="number" id="points"
+            name="points" step="3">
+        <input type="submit">
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;frame&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The iframe tag specifies an inline frame.
+            </b>
+        </p>
+        <b>
+            An inline frame is used to embed another document within the current HTML document.
+        </b>
+        <br>
+        <br>
+        <p>
+            Tip: It is a good practice to always include a title attribute for the iframe. This is used by screen readers to read out what the content of the iframe is.
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+        
+        <h2>Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    src
+                </b>
+                URL
+                <p>
+                    Specifies the address of the document to embed in the iframe
+                </p>
+                <pre>
+                <big>
+        &lt;iframe src="/default.asp"&gt; &lt;/iframe&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    title = 
+                </b>
+                text
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    height = 
+                </b>
+                pixels
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    width =
+                </b>
+                pixels
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    srcdoc =
+                </b>
+                <a href="Attributes/srcdoc.html">
+                    value
+                </a>
+                <p>
+                    Specifies the HTML content of the page to show in the iframe
+                </p>
+                <pre>
+                <big>
+        &lt;iframe srcdoc="p&gt; Hello world! &lt;/p&gt;" src="/default.asp"&gt; &lt;/iframe&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    name
+                </b>
+                text
+                <p>
+                    The name attribute specifies a name for an iframe.
+                </p>
+                <b>
+                    used to reference the 
+                    <mark>
+                        element in a JavaScript, 
+                    </mark>
+                    or as the value of 
+                    <mark>
+                        the target attribute 
+                    </mark>
+                    of an a or form element,
+                    or 
+                    <mark>
+                        the formtarget attribute 
+                    </mark>
+                    of an input or button element.
+                </b>
+                <pre>
+                <big>
+        &lt;iframe src="demo_iframe.htm" name="iframe_a"&gt; &lt;/iframe&gt;
+
+        &lt;a href="https://www.w3schools.com" target="iframe_a"&gt; W3Schools.com &lt;/a&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    allow =
+                </b>
+                accelerometer
+                <p>
+                    Specifies a feature policy for the iframe
+                </p>
+            </li>
+            <li>
+                <b>
+                    allowfullscreen =
+                </b>
+                true / false
+                <br>
+                <br>
+
+                <b>
+                    Set to true if the iframe can activate fullscreen mode by calling the requestFullscreen() method
+                </b>
+            </li>
+            <br>
+            <li>
+                <b>
+                    loading =
+                </b>
+                eager / lazy
+                <br>
+                <br>
+                <b>
+                    Specifies whether a browser should load an iframe immediately or to defer loading of iframe until some conditions are met
+                </b>
+            </li>
+            <br>
+
+            <li>
+                <b>
+                    allowpaymentrequest =
+                </b>
+                true / false
+                <br>
+                <br>
+
+                <b>
+                    Set to true if a cross-origin iframe should be allowed to invoke the Payment Request API
+                </b>
+            </li>
+            <br>
+
+            <li>
+                <b>
+                    sandbox =
+                </b>
+                <a href="Attributes/sandbox.html">
+                values
+                </a>
+                <p>
+                    The sandbox attribute enables an extra set of restrictions for the content in the iframe.
+                </p>
+            </li>
+            <li>
+                <b>
+                    referrerpolicy =
+                </b>
+                <a href="Attributes/referrer.html">
+                    values
+                </a>
+                <p>
+                    Specifies which referrer information to send when fetching the iframe
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <h3>The &lt;output&gt; Element</h3>
+    <pre>
+    <big>
+    &lt;frame width="560" height="315" src="https://www.youtube.com/embed/tvFReKj-bkA" title="YouTube video player"
+    frameborder="4" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen 
+    referrerpolicy="no-referrer" clipboard-write; &gt;
+    </big>
+    </pre>
+
+    
+    <iframe width="560" height="315"
+        src="https://www.youtube.com/embed/tvFReKj-bkA"
+        title="YouTube video player"
+        frameborder="4"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+        referrerpolicy="no-referrer">
+    </iframe>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

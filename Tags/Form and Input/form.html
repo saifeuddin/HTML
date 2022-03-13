@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+        <div
+            style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+            <h1 style="background-color: blueviolet; padding: 20px;">
+                ## HTML &lt;form&gt; Tag
+            </h1>
+            <br>
+
+            <p> <b>
+                    $$ --
+                    The form tag is used to create an HTML form for user input.
+                </b> <br> <br> <br>
+                The form element can contain one or more of the following form elements: <br> <br>
+                &lt;label&gt;<br>
+                &lt;input&gt; <br>
+                &lt;textarea&gt; <br>
+                &lt;button&gt;<br>
+                &lt;select&gt;<br>
+                &lt;option&gt;<br>
+                &lt;optgroup&gt;<br>
+                &lt;fieldset&gt;<br>
+                &lt;output&gt;<br>
+            </p>
+            <br>
+            <br>
+
+
+
+
+            <h2>Attribute :</h2>
+            <ol>
+                <li>
+                    <b>
+                        accept-charset = 
+                    </b>
+                    character_set 
+                    <p>
+                        Specifies the character encodings that are to be used for the form submission.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        action = 
+                    </b>
+                    URL 
+                    <p>
+                        Specifies where to send the form-data when a form is submitted.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        autocomplete = 
+                    </b>
+                    on / off
+                    <p>
+                        	Specifies whether a form should have autocomplete on or off.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        method = 
+                    </b>
+                    GET / POST 
+                    <p>
+                        Specifies the HTTP method to use when sending form-data.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        name = 
+                    </b>
+                    text 
+                    <p>
+                        Specifies the name of a form.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        novalidate = 
+                    </b>
+                    novalidate 
+                    <p>
+                        Specifies that the form should not be validated when submitted.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        target = 
+                    </b>
+                     _black / _self / _top / _parent 
+                    <p>
+                        Specifies where to display the response that is received after submitting the form.
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        enctype = 
+                    </b> <a
+                        href="form attributes/enctype.html">
+                        values 
+                    </a>
+                    <p>
+                        Specifies how the form-data should be encoded when submitting it to the server (only for method="post").
+                    </p>
+                </li>
+                <br>
+                <li>
+                    <b>
+                        rel = 
+                    </b>
+                    <a href="form attributes/rel.html">
+                        values 
+                    </a>
+                        
+                    <p>
+                        Specifies the relationship between a linked resource and the current document.
+                    </p>
+                </li>
+                <br>
+            </ol>
+        </div>
+
+
+
+        <div
+            style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+            <h2>
+                Global Attributes
+            </h2>
+            <b>
+                $$ -- Supports the Global
+                Attributes in HTML.
+            </b>
+            <br>
+
+            <h2>
+                Event Attributes
+            </h2>
+            <b>$$ --
+                Supports the Event Attributes in
+                HTML.
+            </b>
+        </div>
+
+
+
+        <h3>Example :</h3>
+            <form action="/action.php" method="GET">
+                <label for="fname" >   First name : </label>
+                <input type="text"      id="fname"   name="fname"  value=""> <br> <br>
+
+                <label for="lname">  Last Name :   </label>
+                <input type="text"      id="lname"   name="lname" value="">
+                <br>
+                <br>
+
+                <input type="submit" value="submit">
+            </form>
+            <br>
+            <br>
+            <br>
+
+
+
+
+        <h3>Example :</h3>
+        <p>
+            An HTML form with checkboxes:
+        </p>
+            <form action="/action.php" method="GET">
+                <input type="checkbox"      id="bike"   name="vehicle"  value="Bike">
+                <label for="bike" >   HTML </label> <br>
+
+                <input type="checkbox"      id="boat"   name="vehicle1" value="Boat">
+                <label for="boat">    CSS   </label> <br>
+
+                <input type="checkbox"       id="car"   value="Car"     name="vehicle2">
+                <label for="car">   JavaScript  </label> <br> <br>
+
+                <input type="submit" value="submit">
+            </form>
+            <br>
+            <br>
+            <br>
+
+
+
+
+        <h3>Example :</h3>
+        <p>
+            An HTML form with radio buttons:
+        </p>
+            <form action="/action.php" method="GET">
+                <input type="radio" id="html" name="fav_language" value="HTML">
+                <label for="html" > HTML </label> <br>
+
+                <input type="radio" name="fav_language" id="css" value="CSS">
+                <label for="css"> CSS </label> <br>
+
+                <input type="radio" id="js" value="JavaScript" name="fav_language">
+                <label for="js">JavaScript</label> <br> <br>
+
+                <input type="submit" value="submit">
+            </form>
+            <br>
+            <br>
+            <br>
+    
+</body>
+</html>

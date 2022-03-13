@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;video&gt; Tag
+        </h1>
+        <br>
+
+        <img src="Screenshot_2.jpg" alt="">
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+        <h2> All Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    height
+                </b>
+                <p>
+                    Sets the height of the video player.
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                    <b>
+    &lt;video height= "300px"&gt;  &lt;/video&gt; 
+                    </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    width
+                </b>
+                <p>
+                    Sets the width of the video player
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                    <b>
+    &lt;video height= "300" width="300" &gt; &lt;/video&gt;
+                    </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    poster - URL
+                </b>
+                <p>
+                    Specifies an image to be shown while the video is downloading, or until the user hits the play button.
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                    <b>
+    &lt;video height= "300" width="300" poster="images/w3html5.gif"&gt; 
+    
+    &lt;/video&gt;
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    autoplay
+                </b>
+                <p>
+                    Specifies that the video will start playing as soon as it is ready.
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                    <b>
+    &lt;video autoplay&gt;  &lt;/video&gt; 
+                    </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    controls
+                </b>
+                <p>
+                    Specifies that video controls should be displayed (such as a play/pause button etc).
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video controls autoplay&gt;  &lt;/video&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    loop
+                </b>
+                <p>
+                    Specifies that the video will start over again, every time it is finished.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video autoplay loop &gt;  &lt;/video&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    muted
+                </b>
+                <p>
+                    Specifies that the audio output of the video should be muted.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video muted autoplay loop &gt;  &lt;/video&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    src -
+                </b>
+                URL
+                <p>
+                    Specifies the URL of the video file.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video src="movie.mp4" muted autoplay loop &gt;
+        Your browser does not support the video element.
+    &lt;/video&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                        preload - auto | none | metadata 
+                </b>
+                <p>
+                    The preload attribute specifies if and how the author thinks that the video file should be loaded when the page loads.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;video controls preload="none"&gt;
+        
+    &lt;/video&gt;
+                </b>
+                </big>
+                </pre>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <video width="300px" height="200px" controls preload="none" loop poster="w3schools_green.jpg">
+        <source src="movie.mp4" type="video/mp4">
+        Your browser does not support the video
+        element.
+    </video>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

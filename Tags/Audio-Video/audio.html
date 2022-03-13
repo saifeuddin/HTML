@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;audio&gt; Tag
+        </h1>
+        <br>
+
+        <img src="Screenshot_1.jpg" alt="">
+        <br>
+        <br>
+        <br>
+
+
+
+
+
+
+        <h2> All Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    autoplay
+                </b>
+                <p>
+                    Specifies that the audio will start playing as soon as it is ready.
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                    <b>
+    &lt;audio autoplay&gt;  &lt;/audio&gt; 
+                    </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <br>
+            <li>
+                <b>
+                    controls
+                </b>
+                <p>
+                    Specifies a list of image
+                    files to use in different
+                    situations.
+                </p>
+                <pre style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;audio controls autoplay&gt;  &lt;/audio&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    loop
+                </b>
+                <p>
+                    Specifies that the audio will start over again, every time it is finished.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;audio autoplay loop &gt;  &lt;/audio&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    muted
+                </b>
+                <p>
+                    Specifies that the audio output should be muted.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;audio muted autoplay loop &gt;  &lt;/audio&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    src -
+                </b>
+                URL
+                <p>
+                    Specifies the URL of the audio file.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;audio src="horse.ogg" muted autoplay loop &gt;
+        Your browser does not support the audio element.
+    &lt;/audio&gt; 
+                </b>
+                </big>
+                </pre>
+            </li>
+            <br>
+            <li>
+                <b>
+                    <a href="Audio Attributes/preload.html">
+                        preload 
+                    </a>
+                </b>
+                <p>
+                    The preload attribute specifies if and how the author thinks that the audio file should be loaded when the page loads.
+                </p>
+                <pre
+                    style="border: 3px solid rgb(67, 200, 67); border-left-width: 20px; ">
+                <big>
+                <b>
+    &lt;audio controls preload="none"&gt;
+        
+    &lt;/audio&gt;
+                </b>
+                </big>
+                </pre>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <audio controls preload="none" loop>
+        <source src="Audio Attributes/horse.ogv" type="audio/ogg">
+        Your browser does not support the audio
+        element.
+    </audio>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

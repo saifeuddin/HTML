@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;img&gt; Tag loading
+            Attribute
+        </h1>
+        <br>
+
+        <p>
+            The loading attribute specifies whether a browser should load an image immediately or to defer loading of off-screen images until for example the user scrolls near them.
+            attribute. <br> <br>
+        </p>
+        <p>
+            <b>
+                Tip: <br>
+                Add loading="lazy" only to images 
+                <mark>
+                which are positioned below the fold.
+                </mark>
+            </b>
+        </p>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+    &lt;img src="URL" loading="eager | lazy"&gt;
+        </big>
+        </pre>
+
+
+
+
+        <h2>Attributes Values</h2>
+        <ul>
+            <li>
+                <b>
+                    eager
+                </b>
+                <p>
+                    Default. Loads an image immediately
+                </p>
+            </li>
+            <li>
+                <b>
+                    lazy
+                </b>
+                <p>
+                    Defer loading of images until some conditions are met.
+                </p>
+            </li>
+        </ul>
+        <pre>
+        <big>
+        <b>
+        &lt;img src="w3html.gif" alt="W3Schools.com" ismap loading="lazy"&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+    <h3>Example :</h3>
+    <h1>The img loading attribute</h1>
+
+    <!-- visible in viewport -->
+    <img src="wedding.jpg" alt="Wedding" style="width:100%">
+    <img src="rocks.jpg" alt="Rocks"     style="width:100%">
+
+    
+
+    <!-- off-screen images -->
+    <img src="paris.jpg" alt="Paris"   style="width:100%"           loading="lazy">
+    <img src="nature.jpg" alt="Nature" style="width:100%"           loading="lazy">
+    <img src="underwater.jpg" alt="Underwater" style="width:100%"   loading="lazy">
+    <img src="ocean.jpg" alt="Ocean" style="width:100%"             loading="lazy">
+    <img src="mountainskies.jpg" alt="Mountains" style="width:100%" loading="lazy">
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

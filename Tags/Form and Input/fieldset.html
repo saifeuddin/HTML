@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;fieldset&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The fieldset tag is used to group related elements in a form.
+            </b>
+        </p>
+        <p>
+            The fieldset tag draws a box around the related elements.
+        </p>
+
+
+
+        <br>
+        <br>
+        <br>
+        <h2>Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    name =
+                </b>
+                text
+                <p>
+                    Specifies a name for the fieldset
+                </p>
+                <b>
+                    The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+                </b>
+                <pre>
+                <big>
+        &lt;fieldset name="personalia"&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    form =
+                </b>
+                form_idName
+                <p>
+                    Specifies which form the fieldset belongs to
+                </p>
+                <pre>
+                <big>
+        &lt;fieldset form="form1"&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    disabled
+                </b>
+                
+                <p>
+                    Specifies that a group of related form elements should be disabled
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <h3>The &lt;fieldset&gt; Element</h3>
+    <p>
+        A fieldset with a name attribute:
+    </p>
+    <form action="/action_page.php" method="get" >
+        <fieldset name="personalia" disabled style="padding:30px;">
+            <label for="fname">First name:</label>
+            <input type="text" id="fname"
+                name="fname">
+        </fieldset>
+        <br>
+
+        <button type="button" onclick="form.personalia.style.backgroundColor = 'yellow'">
+            Change background color of fieldset
+        </button>
+    </form>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

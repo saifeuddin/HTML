@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+        <div
+            style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+            <h1
+                style="background-color: blueviolet; padding: 20px;">
+                ## HTML &lt;textarea&gt; Tag
+            </h1>
+            <br>
+
+            <p> <b>
+                    $$ --
+                    defines a multi-line text input control.
+                </b> <br> <br>
+                <b>
+                    textarea element is often used in a form, to collect user inputs like comments or reviews.
+                </b> <br> <br> <br> <br>
+                A text area can hold an unlimited number of characters, and the text renders in a fixed-width font (usually Courier).
+            </p> 
+
+            <p>
+                The size of a text area is specified by the cols and rows attributes (or with CSS).
+            </p>
+            <b>
+                The name attribute is needed to reference the form data after the form is submitted (if you omit the name attribute, no data from the text area will be submitted).
+            </b>
+            <p>
+                The id attribute is needed to associate the text area with a label. 
+            </p>
+            <br>
+            <br>
+
+
+
+
+
+
+
+
+            <h2>Attributes</h2>
+            <ol>
+                <li>
+                    <b>
+                        name =
+                    </b>
+                    text
+                    <p>
+                        The name attribute specifies a name for a text area.
+                    </p>
+                    <b>
+                        The name attribute is used to reference elements in a JavaScript, or to reference form data after a form is submitted.
+                    </b>
+                    <pre>
+                    <big>
+          &lt;textarea name="comment"&gt; Enter text here...&lt;/textarea&gt;
+                    </big>
+                    </pre>
+                </li>
+                <li>
+                    <b>
+                        dirname =
+                    </b>
+                    textareaName.dir
+                    <p>
+                        Specifies that the text direction of the textarea will be submitted.
+                    </p>
+                    <b>
+                        The dirname attribute's value is always the name of the text area, followed by ".dir".
+                    </b>
+                    <pre>
+                    <big>
+          &lt;textarea name="comment" dirname="comment"&gt; Enter text here...&lt;/textarea&gt;
+                    </big>
+                    </pre>
+                </li>
+                <li>
+                    <b>
+                        cols =
+                    </b>
+                    number
+                    <p>
+                        Specifies the visible width of a text area
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        rows =
+                    </b>
+                    number
+                    <p>
+                        Specifies the visible number of lines in a text area
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        form =
+                    </b>
+                    form_id
+                    <p>
+                        Specifies which form the text area belongs to
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        autofocus =
+                    </b>
+                    <p>
+                        Specifies that a text area should automatically get focus when the page loads
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        disabled =
+                    </b>
+                    <p>
+                        Specifies that a text area should be disabled
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        readonly =
+                    </b>
+                    <p>
+                        Specifies that a text area should be read-only
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        required =
+                    </b>
+                    <p>
+                        Specifies that a text area is required/must be filled out
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        maxlength =
+                    </b>
+                    number
+                    <p>
+                        Specifies the maximum number of characters allowed in the text area
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        wrap =
+                    </b>
+                    soft / hard
+                    <p>
+                        Specifies how the text in a text area is to be wrapped when submitted in a form
+                    </p>
+                </li>
+                <li>
+                    <b>
+                        placeholder =
+                    </b>
+                    text
+                    <p>
+                        Specifies a short hint that describes the expected value of a text area
+                    </p>
+                </li>
+            </ol>
+        </div>
+
+
+
+        <div
+            style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+            <h2>
+                Global Attributes
+            </h2>
+            <b>
+                $$ -- Supports the Global
+                Attributes in HTML.
+            </b>
+            <br>
+
+            <h2>
+                Event Attributes
+            </h2>
+            <b>$$ --
+                Supports the Event Attributes in
+                HTML.
+            </b>
+        </div>
+
+
+        <h3>Example :</h3>
+        <label for="w3review">Review of W3Schools:</label>
+
+<textarea id="w3review" name="w3review" rows="4" cols="50" placeholder="Describe">
+</textarea>
+
+    <br>
+    <br>
+    <br>
+    <br>
+</body>
+</html>

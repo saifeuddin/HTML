@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: rgb(166, 117, 212); padding: 20px;">
+            ## HTML &lt;audio&gt; Tag preload
+            Attribute
+        </h1>
+        <br>
+
+        <p>
+            <b>
+                $$ --
+                The preload attribute specifies if and how the author thinks that the audio file should be loaded when the page loads.
+            </b>
+        </p>
+        The preload attribute allows the author to provide a hint to the browser about what he/she thinks will lead to the best user experience. This attribute may be ignored in some instances.
+        <br>
+        <br>
+        <br>
+        <b>
+            Note: The preload attribute is ignored 
+            <mark>
+                if autoplay is present.
+            </mark>
+        </b>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <h2>Syntax</h2>
+        <pre>
+        <big>
+    &lt;audio preload= "auto | metadata | none"&gt;
+        </big>
+        </pre>
+
+
+
+
+        <h2>Attributes Values</h2>
+        <ul>
+            <li>
+                <b>
+                    auto
+                </b>
+                <p>
+                    The author thinks that the browser should load the entire audio file when the page loads
+                </p>
+            </li>
+            <li>
+                <b>
+                    metadata
+                </b>
+                <p>
+                    The author thinks that the browser should load only metadata when the page loads.
+                </p>
+            </li>
+            <li>
+                <b>
+                    none
+                </b>
+                <p>
+                    The author thinks that the browser should Not Load the audio file when the page loads.
+                </p>
+                
+            </li>
+        </ul>
+
+        <pre>
+        <big>
+        <b>
+        <hr><hr>
+    &lt;audio controls preload="none"&gt;
+
+    &lt;/audio&gt;
+        </b>
+        </big>
+        </pre>
+    </div>
+
+
+
+    <br>
+    <br>
+
+
+    <h3>Example :</h3>
+    <h1>The audio preload attribute</h1>
+
+    <audio controls preload="none"  loop>
+        <source src="horse.ogv" type="audio/ogg">
+        Your browser does not support the audio
+        element.
+    </audio>
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>

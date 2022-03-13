@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: blueviolet; padding: 20px;">
+            ## HTML &lt;label&gt; Tag
+        </h1>
+        <br>
+
+        <p> <b>
+                $$ --
+                The label tag defines a label for several elements:
+            </b>
+        </p>
+        <img src="label.jpg" alt="">
+        <p>
+            Proper use of labels with the elements above will benefit:
+            <ul>
+                <li>
+                    Screen reader users (will read out loud the label, when the user is focused on the element)
+                </li>
+                <li>
+                    Users who have difficulty clicking on very small regions (such as checkboxes) - because when a user clicks the text within the label element, it toggles the input (this increases the hit area). 
+                </li>
+            </ul>
+        </p>
+        <br>
+        <br>
+        <br>
+        <b>
+            Tip: The for attribute of label must be equal to the id attribute of the related element to bind them together. 
+            <br> <br>
+            A &lt;label&gt; can also be bound to an element by placing the element inside the &lt;label&gt; element. 
+        </b>
+
+
+
+        <br>
+        <br>
+        <br>
+        <h2>Attributes</h2>
+        <ol>
+            <li>
+                <b>
+                    for =
+                </b>
+                element_idName
+                <p>
+                    Specifies the id of the form element the label should be bound to
+                </p>
+                <pre>
+                <big>
+        &lt;label for="browser" id="form2"&gt; Choose your browser from the list:&lt;/label&gt;
+                </big>
+                </pre>
+            </li>
+            <li>
+                <b>
+                    form =
+                </b>
+                form_idName
+                <p>
+                    Specifies which form the label belongs to
+                </p>
+            </li>
+        </ol>
+    </div>
+
+
+
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h2>
+            Global Attributes
+        </h2>
+        <b>
+            $$ -- Supports the Global
+            Attributes in HTML.
+        </b>
+        <br>
+
+        <h2>
+            Event Attributes
+        </h2>
+        <b>$$ --
+            Supports the Event Attributes in
+            HTML.
+        </b>
+    </div>
+
+
+    <h3>Example :</h3>
+    <h3>The &lt;label&gt; Element</h3>
+
+    <form action="/action_page.php" method="get">
+        <label for="browser">Choose your browser from the list:</label>
+        <input list="browsers" name="browser"
+            id="browser">
+        <datalist id="browsers">
+            <option value="Edge" />
+            <option value="Firefox"> firefox
+            </option>
+            <option value="Chrome" label="cc" />
+            <option value="Opera" />
+            <option value="Safari" />
+        </datalist>
+        <input type="submit">
+    </form>
+
+    <br>
+    <br>
+    <br>
+</body>
+
+</html>
