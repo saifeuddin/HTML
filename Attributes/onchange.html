@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: rgb(193, 153, 230); padding: 20px;">
+            ## HTML onchange Attribute
+        </h1>
+        <br>
+
+        <img src="Screenshot_21.jpg" alt="">
+
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <h2>
+            HTML onchange Event
+        </h2>
+        <h3>Syntax</h3>
+        
+        <pre>
+        <big>
+        <b>
+            HTML
+        &lt;input type="text" name="txt" value="Hello" onchange="myFunction(this.value)"&gt;
+        </b>
+        </big>
+        </pre>
+
+
+
+        <br>
+        <br>
+        <br>
+
+        <h3>Example :</h3>
+        <img src="Screenshot_22.jpg" alt="">
+        <br>
+        <br>
+        <input type="text" name="txt" value="Hello" onchange="myFunction(this.value)">
+        <br>
+        <br>
+        <select name="myS" id="select" onchange="myFunction2(this.value)">
+            <option value="Audi"> Audi</option>
+            <option value="BMW"> BMW</option>
+        </select>
+        <p id="demo"></p>
+        <script>
+            function myFunction(x) {
+                alert("The input value has changed. The new value is: " + x)
+            }
+            
+            
+            function myFunction2(x) {
+                alert("The option is " + x);
+
+                var x = document.getElementById('select').value;
+
+                document.getElementById('demo').innerHTML ="You have selected : " + x;
+            }
+
+        </script>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+</html>

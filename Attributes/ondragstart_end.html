@@ -1,0 +1,96 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .droptarget {
+            float: left;
+            width: 100px;
+            height: 35px;
+            margin: 15px;
+            padding: 10px;
+            border: 1px solid #aaaaaa;
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: rgb(193, 153, 230); padding: 20px;">
+            ## HTML ondrag Attribute
+        </h1>
+        <br>
+
+        <img src="Screenshot_25.jpg" alt="">
+        <img src="Screenshot_26.jpg" alt="">
+
+
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <h2>
+            HTML ondragstart Event
+        </h2>
+        <h3>Example :</h3>
+        <img src="Screenshot_27.jpg" alt="">
+    </div>
+
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+            <p id="target" draggable="true" ondragstart="dragStart(event)" ondragend="dragEnd(event)">
+                Drag Me! 
+            </p>
+        </div>
+
+        <div class="droptarget" ondrop="drop(event)" ondragover="allowDrop(event)">
+        </div>
+
+        <p id="demo" style="clear: both;"></p>
+        <script>
+            function allowDrop(e) {
+                e.preventDefault();
+            }
+
+            function dragStart(e) {
+                e.dataTransfer.setData("Text", e.target.id);
+                document.getElementById('demo').innerHTML = "Drag Started";
+            }
+            
+            function dragEnd(e) {
+                document.getElementById('demo').innerHTML = "Drag Ended";
+            }
+            
+            function drop(e) {
+                e.preventDefault();
+                var data = e.dataTransfer.getData("text");
+                e.target.appendChild(document.getElementById(data));
+            }
+        </script>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+</body>
+
+</html>

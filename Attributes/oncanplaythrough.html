@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: rgb(193, 153, 230); padding: 20px;">
+            ## HTML oncanplaythrough Attribute
+        </h1>
+        <br>
+
+        <img src="Screenshot_20.jpg" alt="">
+
+        <br>
+        <br>
+        <hr>
+        <hr>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+
+
+        <h2>
+            HTML oncanplaythrough Event
+        </h2>
+        <h3>Syntax</h3>
+        <pre>
+        <big>
+        <b>
+            HTML
+        &lt;audio controls oncanplaythrough="myFunction()"&gt;
+            &lt;source src="horse.ogv" type="audio/ogg"&gt;
+            Your browser does not support the audio element.
+        &lt;/audio&gt;
+        </b>
+        </big>
+        </pre>
+
+
+
+        <br>
+        <br>
+        <br>
+
+
+        <h3>Example :</h3>
+        <audio controls oncanplaythrough="myFunction()">
+            <source src="horse.ogv" type="audio/ogg">
+            Your browser does not support the audio element.
+        </audio>
+
+        <script>
+            function myFunction() {
+                alert("audio can play without buffering!")
+            }
+        </script>
+        <br>
+        <br>
+    </div>
+
+</body>
+
+</html>

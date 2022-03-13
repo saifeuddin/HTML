@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+        content="IE=edge">
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div
+        style="border: 3px solid black; padding: 20px; margin: 40px 0;">
+        <h1
+            style="background-color: rgb(193, 153, 230); padding: 20px;">
+            ## HTML Global Attribute date-*
+        </h1>
+        <br>
+
+        <img src="Screenshot_3.jpg" alt="">
+        <br>
+        <br>
+        <br>
+        <img src="Screenshot_4.jpg" alt="">
+        
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+        <br>
+
+
+        <h2>Example :</h2>
+        <img src="Screenshot_5.jpg" alt="">
+        <br>
+        <br>
+        <ul style="cursor: pointer;">
+            <li onclick="showDetails(this)" id="owl" data-animal-type="bird"> Owl </li>
+            <li onclick="showDetails(this)" id="salmon" data-animal-type="fish"> Salmon </li>
+            <li onclick="showDetails(this)" id="tarantula" data-animal-type="spider"> Tarantula </li>
+        </ul>
+        <script>
+            function showDetails(animal) {
+                var animalType = animal.getAttribute("data-animal-type");
+
+                alert("The " + animal.innerHTML +" is a "+ animalType);
+            }
+        </script>
+    </div>
+
+</body>
+
+</html>
